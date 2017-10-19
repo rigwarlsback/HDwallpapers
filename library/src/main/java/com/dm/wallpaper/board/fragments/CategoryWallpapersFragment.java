@@ -1,6 +1,6 @@
 package com.dm.wallpaper.board.fragments;
 
-import android.content.Context;
+
 import android.content.res.Configuration;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
@@ -51,8 +51,6 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.InterstitialAd;
 
 import static com.dm.wallpaper.board.helpers.ViewHelper.resetViewBottomPadding;
 
@@ -92,9 +90,6 @@ public class CategoryWallpapersFragment extends Fragment {
     private String mCategoryName;
     private int mCategoryCount;
 
-    private InterstitialAd mInterstitialAd;
-    boolean ad_shown = false;
-
 
     private SearchView mSearchView;
     private WallpapersAdapter mAdapter;
@@ -125,12 +120,6 @@ public class CategoryWallpapersFragment extends Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mInterstitialAd = new InterstitialAd(this.getContext());
-        mInterstitialAd.setAdUnitId("ca-app-pub-3940256099942544/1033173712");
-        mInterstitialAd.loadAd(new AdRequest.Builder().build());
-        if (mInterstitialAd.isLoaded() && !ad_shown) {
-            mInterstitialAd.show();
-        }
         mCategoryName = getArguments().getString(Extras.EXTRA_CATEGORY);
         mCategoryCount = getArguments().getInt(Extras.EXTRA_COUNT);
     }
