@@ -49,7 +49,7 @@ import butterknife.ButterKnife;
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
+//TEST
 public class CollectionFragment extends Fragment {
 
     @BindView(R2.id.appbar)

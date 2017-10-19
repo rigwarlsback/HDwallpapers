@@ -98,7 +98,7 @@ import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
+//TEST
 public class WallpaperBoardActivity extends AppCompatActivity implements ActivityCompat.OnRequestPermissionsResultCallback,
         InAppBillingListener, AppBarListener, NavigationListener, TabListener {
 
