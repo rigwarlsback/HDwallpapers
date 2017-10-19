@@ -109,10 +109,10 @@ public class PopupItem {
 
     public static List<PopupItem> getApplyItems(@NonNull Context context) {
         List<PopupItem> items = new ArrayList<>();
-        items.add(new PopupItem(context.getResources().getString(R.string.menu_wallpaper_crop))
-                .setType(Type.WALLPAPER_CROP)
-                .setCheckboxValue(Preferences.get(context).isCropWallpaper())
-                .setShowCheckbox(true));
+        //items.add(new PopupItem(context.getResources().getString(R.string.menu_wallpaper_crop))
+                //.setType(Type.WALLPAPER_CROP)
+               // .setCheckboxValue(Preferences.get(context).isCropWallpaper())
+               // .setShowCheckbox(true));
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
             items.add(new PopupItem(context.getResources().getString(R.string.menu_apply_lockscreen))
