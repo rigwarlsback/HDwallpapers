@@ -124,8 +124,8 @@ public class CollectionFragment extends Fragment {
         List<Collection> collection = new ArrayList<>();
         collection.add(new Collection(R.drawable.ic_collection_wallpapers,
                 new WallpapersFragment(), Extras.TAG_WALLPAPERS));
-        collection.add(new Collection(R.drawable.ic_collection_latest,
-                new LatestFragment(), Extras.TAG_LATEST));
+      //  collection.add(new Collection(R.drawable.ic_collection_latest,
+       //         new LatestFragment(), Extras.TAG_LATEST));
         collection.add(new Collection(R.drawable.ic_collection_categories,
                 new CategoriesFragment(), Extras.TAG_CATEGORIES));
 
