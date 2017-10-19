@@ -80,6 +80,9 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.InterstitialAd;
+
 /*
  * Wallpaper Board
  *
@@ -124,6 +127,9 @@ public class WallpaperBoardActivity extends AppCompatActivity implements Activit
     private String mLicenseKey;
     private String[] mDonationProductsId;
 
+    private InterstitialAd mInterstitialAd;
+    boolean ad_shown = false;
+
     public void initMainActivity(@Nullable Bundle savedInstanceState, boolean isLicenseCheckerEnabled,
                                  @NonNull byte[] salt, @NonNull String licenseKey,
                                  @NonNull String[] donationProductsId) {
@@ -131,6 +137,13 @@ public class WallpaperBoardActivity extends AppCompatActivity implements Activit
                 R.style.AppThemeDark : R.style.AppTheme);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wallpaper_board);
+        mInterstitialAd = new InterstitialAd(this);
+        mInterstitialAd.setAdUnitId("ca-app-pub-3940256099942544/1033173712");
+        mInterstitialAd.loadAd(new AdRequest.Builder().build());
+        if (mInterstitialAd.isLoaded() && !ad_shown) {
+            mInterstitialAd.show();
+        }
+
         ButterKnife.bind(this);
         Database.get(this.getApplicationContext());
 
