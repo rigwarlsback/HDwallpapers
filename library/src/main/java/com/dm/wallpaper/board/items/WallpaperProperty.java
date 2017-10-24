@@ -72,7 +72,7 @@ public class WallpaperProperty {
                         R.string.wallpaper_property_name, wallpaper.getName())));
 
         properties.add(new WallpaperProperty()
-                .setIcon(R.drawable.ic_toolbar_details_author)
+                .setIcon(R.drawable.book_open_variant)
                 .setTitle(wallpaper.getAuthor())
                 .setDesc(context.getResources().getString(
                         R.string.wallpaper_property_author, wallpaper.getAuthor())));
