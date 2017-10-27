@@ -87,7 +87,7 @@
 
     <!-- Wallpaper Tooltips -->
     <string name="wallpaper_tooltip_preview">You are currently previewing wallpaper with smaller resolution,
-        which may looks blurry and pixelated.</string>
+        which may look blurry and pixelated. Change setting to High Quality to dismiss this message.</string>
     <string name="wallpaper_tooltip_preview_icon_tap">Tap this icon to previews wallpaper with original size</string>
     <string name="wallpaper_tooltip_dont_show">Don\'t show again</string>
     
@@ -159,7 +159,7 @@
     <!-- License -->
     <string name="license_checking">Checking license …</string>
     <string name="license_check">License Check</string>
-    <string name="license_check_success">License check success, thank you for downloading the app from Play Store.</string>
+    <string name="license_check_success">License check success, thank you for downloading Finnst Free from Play Store.</string>
     <string name="license_check_failed">License check failed, you didn\'t download this app from Play Store.
         You will not able to use the app.</string>
     <string name="license_check_retry">Unable to check license, please try again in a few moments</string>

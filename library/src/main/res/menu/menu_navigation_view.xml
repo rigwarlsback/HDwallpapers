@@ -27,7 +27,7 @@
         <item
                    android:id="@+id/navigation_view_premium"
                    android:icon="@drawable/finnstpro_mono"
-                   android:title="Finnst Pro" />
+                   android:title="Full Version" />
 
 
     </group>
